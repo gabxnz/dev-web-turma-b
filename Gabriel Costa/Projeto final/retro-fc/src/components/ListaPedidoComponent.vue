@@ -22,8 +22,8 @@
       >
         <div class="col-id">{{ pedido.id }}</div>
         <div class="col-padrao">{{ pedido.nome }}</div>
-        <div class="col-padrao">{{ pedido.burguer ? pedido.burguer.nome : 'N/A' }}</div>
-        <div class="col-padrao">{{ pedido.ponto ? pedido.ponto.descricao : 'N/A' }}</div>
+        <div class="col-padrao">{{ pedido.camisa ? pedido.camisa.nome : 'N/A' }}</div>
+        <div class="col-padrao">{{ pedido.modelo ? pedido.modelo.descricao : 'N/A' }}</div>
         <div class="col-padrao">
           <ul>
             <li v-for="(complemento, index) in pedido.complemento" :key="index">
